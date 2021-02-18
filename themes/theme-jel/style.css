@@ -1055,7 +1055,7 @@ body.home::after {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #28bee4;
+  background-color: wheat;
   z-index: -1;
   clip-path: polygon(100% 66%, 72% 100%, 100% 100%);
 }
