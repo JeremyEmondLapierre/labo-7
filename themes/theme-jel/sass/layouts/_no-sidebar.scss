@@ -9,3 +9,18 @@
 			"footer";
 	}
 }
+
+/*
+#page .site (conteneur de la page)
+	#masthead .site-header (entete de la page)
+		.site-branding
+			.site-title
+			.site-description
+		#site-navigation .main-navigation
+	#primary .site-main (section principale de la page)
+	#colophon .site-footer
+*/
+
+.site-branding, #primary{
+	margin: 0 0 0 3rem;
+}
