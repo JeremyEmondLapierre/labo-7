@@ -31,6 +31,8 @@ body.home::after{
     font-family: $font__sitetitle;
     font-weight: bold;
     font-size:  clamp(1.2rem, #{"-0.875rem + 8.333vw"}, 3rem);
+    display: flex;
+    justify-content: center;
     a{
         text-decoration: none;
     }
@@ -41,6 +43,8 @@ body.home::after{
     font-size:  clamp(.9rem, #{"-0.875rem + 8.333vw"}, 1.5rem);
     margin-top: 0px;
     font-family: $font__sitetitle;
+    display: flex;
+    justify-content: center;
 }
 
 .accueil{
