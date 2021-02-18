@@ -16,12 +16,13 @@ body.home::after{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: wheat;
+    background-color: white;
     z-index: -1;
-    clip-path: polygon(100% 66%, 72% 100%, 100% 100%);
+    // clip-path: polygon(100% 66%, 72% 100%, 100% 100%);
 
         @include media-desktop{
             clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
+            background-color: wheat;
         }
 }
 
