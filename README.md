@@ -1,1 +1,1 @@
-https://github.com/JeremyEmondLapierre/labo-3
+https://jeremyemondlapierre.github.io/labo-3/
