@@ -1150,6 +1150,12 @@ footer p {
   width: 100vw;
   display: flex;
   justify-content: center;
+  background-color: #d4cf9a;
+}
+
+#Bouttons button {
+  background-color: brown;
+  border: none;
 }
 
 /* Carrousel
@@ -1160,6 +1166,8 @@ footer p {
   display: flex;
   transition: transform .5s;
   transform: translateX(0);
+  font-size: 2rem;
+  color: white;
 }
 
 .carrousel div {

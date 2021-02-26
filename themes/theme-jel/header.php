@@ -48,9 +48,9 @@
 		<?php
 		if (is_front_page()) : ?>
 		<section class="carrousel">
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
+				<div>Premier carrousel</div>
+				<div>Deuxième carrousel</div>
+				<div>Troisième carrousel</div>
 		</section>
 		<div id="Bouttons">
 		<button id="un">1</button>
