@@ -2,15 +2,22 @@
 body{
     margin: 0px;
     padding: 0px;
+    
 }
 body.home{
     background-color: white;
+    overflow-x: hidden;
+}
+.home{
+    #primary{
+        width: 100vw;
+    }
 }
 
 body.home::after{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 120vh;
     content: '';
     top: 0;
     bottom: 0;
@@ -32,6 +39,7 @@ body.home::after{
     font-family: $font__sitetitle;
     font-weight: bold;
     font-size:  clamp(1.2rem, #{"-0.875rem + 8.333vw"}, 3rem);
+    width: 100vw;
     display: flex;
     justify-content: center;
     a{
@@ -44,6 +52,7 @@ body.home::after{
     font-size:  clamp(.9rem, #{"-0.875rem + 8.333vw"}, 1.5rem);
     margin-top: 0px;
     font-family: $font__sitetitle;
+    width: 100vw;
     display: flex;
     justify-content: center;
 }
@@ -52,6 +61,7 @@ body.home::after{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     ul{
         list-style: none;
         font-size:  clamp(.8rem, #{"-0.875rem + 8.333vw"}, 2rem);
@@ -89,4 +99,10 @@ footer{
         margin-top:0px;
         margin-bottom: 0px;
     }
+}
+#Bouttons{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+   
 }

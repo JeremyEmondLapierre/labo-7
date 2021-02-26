@@ -1,6 +1,6 @@
 .main-navigation {
 	display: block;
-	width: 100%;
+	width: 100vw;
 
 	ul {
 		display: none;
@@ -76,8 +76,8 @@ Bouton Burger
 
 .menu-toggle{
 	padding: 0;
-	transition: transform .25s;
-	transform: rotate(0deg);
+	//transition: transform .25s;
+	//transform: rotate(0deg);
 	border: 0;
 }
 
@@ -94,11 +94,11 @@ Bouton Burger
 }
 
 
-
+/*
 .main-navigation.toggled .menu-toggle{
 	transform: rotate(90deg);
 }
-
+*/
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;

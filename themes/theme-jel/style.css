@@ -691,7 +691,7 @@ textarea {
 --------------------------------------------- */
 .main-navigation {
   display: block;
-  width: 100%;
+  width: 100vw;
 }
 
 .main-navigation ul {
@@ -744,8 +744,6 @@ Bouton Burger
 ************************************************************************/
 .menu-toggle {
   padding: 0;
-  transition: transform .25s;
-  transform: rotate(0deg);
   border: 0;
 }
 
@@ -762,10 +760,11 @@ Bouton Burger
   transform: scale(0.99);
 }
 
-.main-navigation.toggled .menu-toggle {
-  transform: rotate(90deg);
+/*
+.main-navigation.toggled .menu-toggle{
+	transform: rotate(90deg);
 }
-
+*/
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
@@ -1050,12 +1049,17 @@ body {
 
 body.home {
   background-color: white;
+  overflow-x: hidden;
+}
+
+.home #primary {
+  width: 100vw;
 }
 
 body.home::after {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 120vh;
   content: '';
   top: 0;
   bottom: 0;
@@ -1077,6 +1081,7 @@ body.home::after {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: clamp(1.2rem, -0.875rem + 8.333vw, 3rem);
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
@@ -1089,6 +1094,7 @@ body.home::after {
   font-size: clamp(0.9rem, -0.875rem + 8.333vw, 1.5rem);
   margin-top: 0px;
   font-family: "Montserrat", sans-serif;
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
@@ -1097,6 +1103,7 @@ body.home::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 }
 
 .accueil ul {
@@ -1137,5 +1144,166 @@ footer {
 footer p {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+#Bouttons {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+/* Carrousel
+--------------------------------------------- */
+.carrousel {
+  width: 300vw;
+  height: 20vh;
+  display: flex;
+  transition: transform .5s;
+  transform: translateX(0);
+}
+
+.carrousel div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.carrousel div:nth-of-type(1) {
+  background-color: #00ff37;
+}
+
+.carrousel div:nth-of-type(2) {
+  background-color: #ff9d00;
+}
+
+.carrousel div:nth-of-type(3) {
+  background-color: #00aeff;
+}
+
+/* Burger
+--------------------------------------------- */
+/* --------------------------------------------------------------------------------------
+Les variables 
+---------------------------------------------------------------------------------------- */
+/*---------------------------------------------------------------------------------------
+Le bouton buger
+----------------------------------------------------------------------------------------- */
+#burger {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#burger div {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#burger div:nth-of-type(1) {
+  background-color: #3ddada;
+  clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
+}
+
+#burger div:nth-of-type(2) {
+  background-color: #3d79da;
+  clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+}
+
+#burger div:nth-of-type(3) {
+  background-color: #dab03d;
+  clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+}
+
+/* -----------------------------------------------------------------------------------
+La barre du haut
+-------------------------------------------------------------------------------------- */
+@keyframes ouvreX1 {
+  0% {
+    clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
+  }
+  100% {
+    clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
+  }
+}
+
+@keyframes fermeX1 {
+  0% {
+    clip-path: polygon(8% -8%, 108% 92%, 92% 108%, -8% 8%);
+  }
+  100% {
+    clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
+  }
+}
+
+.ouvreX1 {
+  animation: ouvreX1 0.1s both;
+}
+
+.fermeX1 {
+  animation: fermeX1 0.1s both;
+}
+
+/* -----------------------------------------------------------------------------------
+La barre du bas
+-------------------------------------------------------------------------------------- */
+@keyframes ouvreX3 {
+  0% {
+    clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+  }
+  100% {
+    clip-path: polygon(-8% 92%, 92% -8%, 108% 8%, 8% 108%);
+  }
+}
+
+@keyframes fermeX3 {
+  0% {
+    clip-path: polygon(-4% 96%, 96% -4%, 104% 4%, 4% 104%);
+  }
+  100% {
+    clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+  }
+}
+
+.ouvreX3 {
+  animation: ouvreX3 0.1s both;
+}
+
+.fermeX3 {
+  animation: fermeX3 0.1s both;
+}
+
+/* -----------------------------------------------------------------------------------
+La barre du millieu
+-------------------------------------------------------------------------------------- */
+@keyframes ouvreX2 {
+  0% {
+    clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+  }
+  100% {
+    clip-path: polygon(48% 48%, 52% 48%, 52% 52%, 48% 52%);
+  }
+}
+
+@keyframes fermeX2 {
+  0% {
+    clip-path: polygon(48% 48%, 52% 48%, 52% 52%, 48% 52%);
+  }
+  100% {
+    clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+  }
+}
+
+.ouvreX2 {
+  animation: ouvreX2 0.1s both;
+}
+
+.fermeX2 {
+  animation: fermeX2 0.1s both;
 }
 /*# sourceMappingURL=style.css.map */
