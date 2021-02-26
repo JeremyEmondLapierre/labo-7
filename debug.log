@@ -68,3 +68,10 @@
 [25-Feb-2021 21:58:58 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 156
 [25-Feb-2021 21:59:24 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 156
 [25-Feb-2021 21:59:27 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 156
+[26-Feb-2021 16:19:58 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 156
+[26-Feb-2021 16:24:47 UTC] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\4w4\wp-includes\Requests\Transport\cURL.php on line 463
+[26-Feb-2021 16:40:21 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 156
+[26-Feb-2021 16:40:39 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 156
+[26-Feb-2021 16:40:51 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 156
+[26-Feb-2021 16:42:56 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 156
+[26-Feb-2021 16:43:08 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 156
