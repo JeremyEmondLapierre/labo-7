@@ -818,6 +818,7 @@ Menu pour tablette
 @media (min-width: 800px) {
   #masthead {
     background-color: #f1e7d4;
+    width: 100vw;
   }
 }
 
@@ -1045,6 +1046,7 @@ Menu pour tablette
 body {
   margin: 0px;
   padding: 0px;
+  overflow-x: hidden;
 }
 
 body.home {
@@ -1059,7 +1061,6 @@ body.home {
 body.home::after {
   position: absolute;
   width: 100%;
-  height: 120vh;
   content: '';
   top: 0;
   bottom: 0;
@@ -1073,14 +1074,15 @@ body.home::after {
   body.home::after {
     clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
     background-color: wheat;
+    height: 120vh;
   }
 }
 
 .site-title {
   margin-bottom: 0px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Dancing Script", cursive;
   font-weight: bold;
-  font-size: clamp(1.2rem, -0.875rem + 8.333vw, 3rem);
+  font-size: clamp(1.2rem, -0.875rem + 8.333vw, 2.5rem);
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -1214,17 +1216,17 @@ Le bouton buger
 }
 
 #burger div:nth-of-type(1) {
-  background-color: #3ddada;
+  background-color: #1a2424;
   clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
 }
 
 #burger div:nth-of-type(2) {
-  background-color: #3d79da;
+  background-color: #373d46;
   clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
 }
 
 #burger div:nth-of-type(3) {
-  background-color: #dab03d;
+  background-color: #69665d;
   clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
 }
 
