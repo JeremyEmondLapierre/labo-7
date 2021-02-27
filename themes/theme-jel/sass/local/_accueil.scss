@@ -57,6 +57,7 @@ body.home::after{
     width: 100vw;
     display: flex;
     justify-content: center;
+    font-weight: bold;
 }
 
 .accueil{
@@ -110,6 +111,8 @@ footer{
     button{
         background-color: brown;
         border: none;
+        color: white;
+        border-radius: 50px;
     }
 }
 
