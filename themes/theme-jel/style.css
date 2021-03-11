@@ -700,43 +700,57 @@ textarea {
   margin: 0;
   padding-left: 0;
   background-color: #000;
+  text-align: left;
+  /* Fin du sub-menu*/
 }
 
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  float: left;
   position: absolute;
   top: 100%;
+  transition: left .5s;
   left: -999em;
   z-index: 99999;
 }
 
-.main-navigation ul ul ul {
-  left: -999em;
-  top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-  display: block;
-  left: auto;
+.main-navigation ul ul li a {
+  padding-left: 20px;
 }
 
 .main-navigation ul ul a {
-  width: 200px;
+  width: 100%;
 }
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
-  left: auto;
+  left: 0;
 }
 
-.main-navigation li {
+.main-navigation ul li {
   position: relative;
+}
+
+.main-navigation ul a[href="#"]::after {
+  position: absolute;
+  content: "\2B9E";
+  width: 100%;
+  height: 100%;
+  top: 25%;
+  bottom: 0;
+  left: 90%;
+  right: 0;
+}
+
+.main-navigation ul li.focus a[href="#"]::after,
+.main-navigation ul a[href="#"]:hover::after {
+  content: "\2B9F";
 }
 
 .main-navigation a {
   display: block;
   text-decoration: none;
+  padding: .5rem;
 }
 
 /************************************************************************
@@ -760,20 +774,9 @@ Bouton Burger
   transform: scale(0.99);
 }
 
-/*
-.main-navigation.toggled .menu-toggle{
-	transform: rotate(90deg);
-}
-*/
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
-}
-
-@media (min-width: 800px) {
-  .main-navigation.toggled ul {
-    display: none;
-  }
 }
 
 /* --------------------------------------------------------
@@ -783,10 +786,26 @@ Menu pour tablette
   .menu-toggle {
     display: none;
   }
+  .main-navigation.toggled ul,
   .main-navigation ul {
     display: flex;
     position: static;
     justify-content: space-around;
+  }
+  .main-navigation.toggled ul a[href="#"]::after,
+  .main-navigation ul a[href="#"]::after {
+    display: none;
+  }
+  .main-navigation.toggled ul li:hover ul,
+  .main-navigation ul li:hover ul {
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: 500px;
+  }
+  .main-navigation.toggled ul ul,
+  .main-navigation ul ul {
+    display: none;
   }
 }
 
@@ -1161,13 +1180,6 @@ footer p {
   display: flex;
   justify-content: center;
   background-color: #d4cf9a;
-}
-
-#Bouttons button {
-  background-color: brown;
-  border: none;
-  color: white;
-  border-radius: 50px;
 }
 
 /* Carrousel
