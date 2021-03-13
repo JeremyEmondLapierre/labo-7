@@ -1094,7 +1094,7 @@ body.home::after {
   body.home::after {
     clip-path: polygon(70% 0, 100% 0, 100% 100%, 60% 100%);
     background-color: wheat;
-    height: 120vh;
+    height: 220vh;
   }
 }
 
