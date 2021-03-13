@@ -801,8 +801,8 @@ Menu pour tablette
   .main-navigation ul li:hover ul {
     display: block;
     position: absolute;
-    width: 400px;
-    height: 500px;
+    width: 250px;
+    height: auto;
   }
   .main-navigation.toggled ul ul,
   .main-navigation ul ul {
