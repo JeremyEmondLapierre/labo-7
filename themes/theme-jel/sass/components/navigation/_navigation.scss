@@ -27,6 +27,7 @@
 
 			a {
 				width: 100%;
+				border: 2px dashed white;
 			}
 		} /* Fin du sub-menu*/
 
@@ -66,7 +67,7 @@
 		display: block;
 		text-decoration: none;
 		padding: .5rem;
-		// background-color: hotpink;
+		
 	}
 
 	
@@ -104,6 +105,7 @@ Bouton Burger
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+	
 }
 /* --------------------------------------------------------
 Menu pour tablette
@@ -127,9 +129,11 @@ Menu pour tablette
 			position: absolute;
 			width: 250px;
 			height: auto;
+			
 		}
 	ul{
 		display: none;
+		
 	}
 	}
 }

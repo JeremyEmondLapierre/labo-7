@@ -681,7 +681,8 @@ textarea {
 	#colophon .site-footer
 */
 .site-branding, #primary {
-  margin: 0 0 0 3rem;
+  margin: 0 0 0 1rem;
+  width: 97vw;
 }
 
 /*--------------------------------------------------------------
@@ -720,6 +721,7 @@ textarea {
 
 .main-navigation ul ul a {
   width: 100%;
+  border: 2px dashed white;
 }
 
 .main-navigation ul li:hover > ul,
@@ -1181,6 +1183,7 @@ footer p {
   display: flex;
   justify-content: center;
   background-color: #d4cf9a;
+  transform: scale(1.5);
 }
 
 /* Carrousel

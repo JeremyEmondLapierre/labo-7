@@ -53,7 +53,7 @@
 				<div>Troisième carrousel</div>
 		</section>
 		<div id="Bouttons">
-		<input type="radio" id="un" name="carousel">
+		<input type="radio" id="un" name="carousel" checked="checked">
 		<input type="radio" id="deux" name="carousel">
 		<input type="radio" id="trois" name="carousel">
 		</div>
