@@ -196,7 +196,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 
 function extraire_cours($query){
-	if($query->is_category('cours')){
+	if( !is_admin() && $query->is_front_page() && $query->is_main_query() ){
 		$query->set('posts_per_page', -1);
 		$query->set('orderby', 'title');
 		$query->set('order', 'asc');

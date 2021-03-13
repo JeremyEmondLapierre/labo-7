@@ -33,9 +33,13 @@
 		li:hover > ul,
 		li.focus > ul {
 			left: 0;
+			
+			width: 100%;
 		}
 		li {
 		position: relative;
+		// border: 1px solid white;
+		
 		}
 		a[href="#"]::after{
 			position: absolute;
@@ -62,6 +66,7 @@
 		display: block;
 		text-decoration: none;
 		padding: .5rem;
+		// background-color: hotpink;
 	}
 
 	
