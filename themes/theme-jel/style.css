@@ -1108,7 +1108,7 @@ body.home::after {
   body.home::after {
     clip-path: polygon(70% 0, 100% 0, 100% 100%, 60% 100%);
     background-color: wheat;
-    height: 260%;
+    height: 390%;
   }
 }
 
@@ -1135,17 +1135,20 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
   border: 1px solid black;
   margin: 1%;
   width: 100%;
+  background-color: #3f3a3a;
 }
 
 .home .cours section article p {
   margin: .4rem;
   font-size: 1rem;
+  color: white;
 }
 
 .home .cours section article a {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
+  color: white;
 }
 
 @media (min-width: 800px) {
@@ -1160,6 +1163,11 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
     width: 29%;
     margin: 1%;
   }
+}
+
+.home .cours h2 {
+  padding: 5px;
+  border: 2px solid black;
 }
 
 /* ------------------------------------------------------------------------- 
@@ -1223,6 +1231,22 @@ footer p {
 
 svg {
   position: relative;
+}
+
+.bar {
+  display: flex;
+  height: 5px;
+  width: 100%;
+  border: 10px solid black;
+}
+
+.TypeCours {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-right: 30px;
 }
 
 /* Carrousel

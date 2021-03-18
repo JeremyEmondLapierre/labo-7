@@ -40,8 +40,13 @@ get_header();
 					if("XXXXXX" != $precedent) :?>
 					</section>
 					<?php endif ?>
+					<div class="TypeCours">
+					<div class="bar"></div>
 					<h2><?php echo $typeCours ?></h2>
+					<div class="bar"></div>
+					</div>
 					<section>
+					
 				<?php endif ?>
 				
 				<article>
