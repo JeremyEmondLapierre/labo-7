@@ -34,7 +34,7 @@ body.home::after{
         @include media-desktop{
             clip-path: polygon(70% 0, 100% 0, 100% 100%, 60% 100%);
             background-color: wheat;
-            height: 390%;
+            height: 400%;
         }
 }
 /* ------------------------------------------------------------------------- 
@@ -90,6 +90,7 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
     h2{
         padding: 5px;
         border: 2px solid black;
+        border-radius: 10%;
     }
 }
 /* ------------------------------------------------------------------------- 
