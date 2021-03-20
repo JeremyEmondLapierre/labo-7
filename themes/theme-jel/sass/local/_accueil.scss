@@ -34,7 +34,7 @@ body.home::after{
         @include media-desktop{
             clip-path: polygon(70% 0, 100% 0, 100% 100%, 60% 100%);
             background-color: wheat;
-            height: 400%;
+            height: 420%;
         }
 }
 /* ------------------------------------------------------------------------- 
@@ -66,10 +66,13 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
             color: white;
         }
         a{
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: bold;
             text-decoration: none;
             color: white;
+            display: flex;
+            padding-left: 10px;
+            padding-right: 10px;
         }
     }
 
