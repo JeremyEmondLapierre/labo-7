@@ -48,9 +48,9 @@
 		<?php
 		if (is_front_page()) : ?>
 		<section class="carrousel">
-				<div>Premier carrousel</div>
-				<div>Deuxième carrousel</div>
-				<div>Troisième carrousel</div>
+				<div><a href="http://localhost/4w4/?p=48">Cours de création vidéo</a></div>
+				<div><a href="http://localhost/4w4/?p=55">Cours de création de jeu 2D</a></div>
+				<div><a href="http://localhost/4w4/?p=69">Stage</a></div>
 		</section>
 		<div id="Bouttons">
 		<input type="radio" id="un" name="carousel" checked="checked">

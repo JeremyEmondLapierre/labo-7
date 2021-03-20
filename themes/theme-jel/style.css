@@ -1262,7 +1262,6 @@ svg {
   transition: transform .5s;
   transform: translateX(0);
   font-size: 2rem;
-  color: white;
   text-decoration: underline;
 }
 
@@ -1278,12 +1277,24 @@ svg {
   background-position: center;
 }
 
+.carrousel div:nth-of-type(1) a {
+  color: black;
+}
+
 .carrousel div:nth-of-type(2) {
   background-image: url(https://xxxclairewilliamsxxx.files.wordpress.com/2013/09/binary_patch_03.gif);
 }
 
+.carrousel div:nth-of-type(2) a {
+  color: white;
+}
+
 .carrousel div:nth-of-type(3) {
   background-image: url(https://static.vecteezy.com/system/resources/previews/000/103/536/non_2x/vector-seamless-pineapple-ananas-pattern.jpg);
+}
+
+.carrousel div a {
+  color: black;
 }
 
 /* Burger
