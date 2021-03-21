@@ -1,7 +1,7 @@
 .main-navigation {
 	display: block;
 	width: 100vw;
-
+	//Ul qui présente tous les sessions
 	ul {
 		display: none;
 		list-style: none;
@@ -9,6 +9,7 @@
 		padding-left: 0;
 		background-color: #000;
 		text-align: left;
+		//Liste de tous les cours dans chaque session
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -36,9 +37,8 @@
 		}
 		li {
 		position: relative;
-		// border: 1px solid white;
-		
 		}
+		//Ajout de la petite flèche en média mobile
 		a[href="#"]::after{
 			position: absolute;
 			content: "\2B9E";
@@ -58,7 +58,6 @@
 
 	}
 
-	
 
 	a {
 		display: block;
@@ -82,8 +81,6 @@ Bouton Burger
 
 .menu-toggle{
 	padding: 0;
-	//transition: transform .25s;
-	//transform: rotate(0deg);
 	border: 0;
 }
 
