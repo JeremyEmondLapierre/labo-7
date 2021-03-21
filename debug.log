@@ -1049,3 +1049,14 @@ Stack trace:
 [21-Mar-2021 15:26:47 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 158
 [21-Mar-2021 15:26:48 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 158
 [21-Mar-2021 15:27:31 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 158
+[21-Mar-2021 15:38:22 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 158
+[21-Mar-2021 15:38:39 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 158
+[21-Mar-2021 15:38:43 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 158
+[21-Mar-2021 15:38:57 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 158
+[21-Mar-2021 15:39:11 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 158
+[21-Mar-2021 15:39:16 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 158
+[21-Mar-2021 15:39:54 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 158
+[21-Mar-2021 15:41:07 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 158
+[21-Mar-2021 15:41:30 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 158
+[21-Mar-2021 15:41:41 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 158
+[21-Mar-2021 15:42:12 UTC] PHP Warning:  filemtime(): stat failed for C:\xampp\htdocs\4w4/wp-content/themes/theme-jel/carrousel.js in C:\xampp\htdocs\4w4\wp-content\themes\theme-jel\functions.php on line 158

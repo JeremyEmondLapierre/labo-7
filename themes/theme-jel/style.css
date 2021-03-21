@@ -1112,10 +1112,11 @@ body.home::after {
   }
 }
 
-h1 {
+h1.page-title {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: titreArchives ease-in 2s infinite;
 }
 
 /* ------------------------------------------------------------------------- 
@@ -1257,6 +1258,24 @@ svg {
   flex-direction: row;
   margin-left: 20px;
   margin-right: 30px;
+}
+
+/* ------------------------------------------------------------------------- 
+ANIMATIONS DANS LA PAGE
+------------------------------------------------------------------------- */
+@keyframes titreArchives {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-20px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* Carrousel
