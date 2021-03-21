@@ -37,6 +37,11 @@ body.home::after{
             height: 420%;
         }
 }
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* ------------------------------------------------------------------------- 
 LISTE DES BLOCS DE COURS PAR type_de_cours
 ------------------------------------------------------------------------- */
@@ -57,7 +62,7 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
         border: 1px solid black;
         margin: 1%;
         width: 100%;
-        background-color: rgb(63, 58, 58);
+        background-color: $color__article;
         
         
         p{
