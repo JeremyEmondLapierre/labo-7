@@ -1,5 +1,5 @@
-Remise du TP1 : Site via Wordpress
+Labo-5
 @Jérémy Emond-Lapierre
 Groupe 2
-Création d'un site Web avec Worpress avec la description des différents cours présents dans le programme de TIM avec les valeurs de Scrum
-https://jeremyemondlapierre.github.io/TP1/
+Importation du site sur WordPress
+https://e1952173.webdev.cmaisonneuve.qc.ca/Design/
