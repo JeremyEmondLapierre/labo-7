@@ -1450,4 +1450,85 @@ La barre du millieu
 .fermeX2 {
   animation: fermeX2 0.1s both;
 }
+
+/* Slider
+--------------------------------------------- */
+/*******************************************************************
+STYLES QUI SONT APPLIQUÉS AU SLIDER AVEC LES COURS
+*******************************************************************/
+.carrouselCours {
+  width: 600vw;
+  height: 20vh;
+  display: flex;
+  transition: transform .5s;
+  transform: translate(0);
+  flex-wrap: nowrap !important;
+}
+
+.carrouselCours .slide__conteneur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.carrouselCours .slide__conteneur .slide {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid green;
+}
+
+@media (min-width: 800px) {
+  .carrouselCours .slide__conteneur .slide {
+    width: 60%;
+  }
+}
+
+.carrouselCours .slide__conteneur .slide img {
+  display: block;
+  margin: 2%;
+}
+
+.carrouselCours .slide__conteneur .slide .slide__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrouselCours .slide__conteneur .slide .slide__info p {
+  font-size: .8rem;
+}
+
+.carrouselCours .slide__conteneur .slide .slide__info a {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.carrouselCours .slide__conteneur .slide:nth-of-type(1) {
+  background-color: chartreuse;
+}
+
+.carrouselCours .slide__conteneur .slide:nth-of-type(2) {
+  background-color: chocolate;
+}
+
+.carrouselCours .slide__conteneur .slide:nth-of-type(3) {
+  background-color: cornflowerblue;
+}
+
+.ctrl-carroussel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.ctrl-carroussel .rad-carrousel {
+  display: block;
+  margin: .5rem 2rem .5rem 2rem;
+}
 /*# sourceMappingURL=style.css.map */
