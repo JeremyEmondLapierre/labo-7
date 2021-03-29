@@ -1145,6 +1145,10 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
   background-color: #3f3a3a;
 }
 
+.home .cours section article:hover {
+  transform: scale(1.02);
+}
+
 .home .cours section article p {
   margin: .4rem;
   font-size: 1rem;

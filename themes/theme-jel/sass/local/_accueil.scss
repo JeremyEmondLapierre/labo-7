@@ -67,6 +67,9 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
         margin: 1%;
         width: 100%;
         background-color: $color__article;
+        &:hover{
+            transform: scale(1.02);
+        }
         p{
             margin: .4rem;
             font-size: 1rem;
