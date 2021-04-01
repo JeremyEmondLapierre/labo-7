@@ -1151,6 +1151,7 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
 
 .home .cours section article:hover:not(.slide__conteneur) {
   transform: scale(1.02);
+  box-shadow: inset 0 0 0 2px white;
 }
 
 .home .cours section article p {
@@ -1203,7 +1204,18 @@ LISTE DES BLOCS DE COURS PAR type_de_cours FIN
 }
 
 .site-title a {
+  background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, black, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: clamp(1.2rem, -0.875rem + 8.333vw, 2.5rem);
+  font-family: "Source Sans Pro", sans-serif;
+  animation: revelation 3000ms ease-in-out forwards 200ms, briller 2500ms linear infinite 2000ms;
   text-decoration: none;
+}
+
+.site-title a:hover {
+  color: black;
 }
 
 .site-description {
@@ -1271,18 +1283,18 @@ svg {
 /* ------------------------------------------------------------------------- 
 ANIMATIONS DANS LA PAGE
 ------------------------------------------------------------------------- */
-@keyframes titreArchives {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-20px);
-  }
-  50% {
-    transform: translateX(20px);
+@keyframes revelation {
+  80% {
+    letter-spacing: 8px;
   }
   100% {
-    transform: translateX(0);
+    background-size: 300% 300%;
+  }
+}
+
+@keyframes briller {
+  40% {
+    text-shadow: 0 0 8px #fff;
   }
 }
 
@@ -1293,7 +1305,7 @@ STYLES QUI SONT APPLIQUÉS AU CARROUSSEL
 *******************************************************************/
 .carrousel {
   width: 300vw;
-  height: 20vh;
+  height: 50vh;
   display: flex;
   transition: transform .5s;
   transform: translateX(0);
@@ -1309,28 +1321,42 @@ STYLES QUI SONT APPLIQUÉS AU CARROUSSEL
 }
 
 .carrousel div:nth-of-type(1) {
-  background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20191030/pngtree-seamless-pattern-with-apple-cute-background-premium-vector-image_320848.jpg);
+  background-image: url(https://s.studiobinder.com/wp-content/uploads/2020/06/Film-Terms-%E2%80%94-The-Definitive-Glossary-of-Film-Terminology-Featured.jpg.webp);
   background-position: center;
 }
 
 .carrousel div:nth-of-type(1) a {
   color: black;
+  background-color: white;
+  padding: 10px;
+  border: 3px solid grey;
+  border-radius: 10px;
 }
 
 .carrousel div:nth-of-type(2) {
-  background-image: url(https://xxxclairewilliamsxxx.files.wordpress.com/2013/09/binary_patch_03.gif);
+  background-image: url(https://cdn.cstj.qc.ca/wp-content/uploads/2019/12/17103551/45578323324_57ca5ab710_k.jpg);
+  background-position: center;
 }
 
 .carrousel div:nth-of-type(2) a {
   color: white;
+  background-color: black;
+  padding: 10px;
+  border: 3px solid grey;
+  border-radius: 10px;
 }
 
 .carrousel div:nth-of-type(3) {
-  background-image: url(https://static.vecteezy.com/system/resources/previews/000/103/536/non_2x/vector-seamless-pineapple-ananas-pattern.jpg);
+  background-image: url(https://citoyen.cmaisonneuve.qc.ca/wp-content/uploads/2019/07/Jardin-int%C3%A9rieur-2-1789x910.jpg);
+  background-position: center;
 }
 
 .carrousel div a {
   color: black;
+  background-color: white;
+  padding: 10px;
+  border: 3px solid grey;
+  border-radius: 10px;
 }
 
 /* Burger
