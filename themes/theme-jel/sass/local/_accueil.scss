@@ -43,7 +43,8 @@ h1.page-title{
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: titreArchives ease-in 2s infinite;
+    color: black;
+    text-shadow: 3px 5px 2px #aca9a9;
 }
 /* ------------------------------------------------------------------------- 
 LISTE DES BLOCS DE COURS PAR type_de_cours
@@ -59,17 +60,22 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
 
     //Style qui s'applique aux articles de cours
     article{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        border: 1px solid black;
+        
         margin: 1%;
         width: 100%;
-        background-color: $color__article;
-        &:hover{
+
+        &:not(.slide__conteneur){
+            background-color: $color__article;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &:hover:not(.slide__conteneur){
             transform: scale(1.02);
         }
+        
         p{
             margin: .4rem;
             font-size: 1rem;

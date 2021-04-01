@@ -19,7 +19,7 @@ STYLES QUI SONT APPLIQUÉS AU SLIDER AVEC LES COURS
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        border: 2px solid green;
+        border: 2px solid black;
         @include tablette{
             width: 60%;
         }
@@ -44,15 +44,7 @@ STYLES QUI SONT APPLIQUÉS AU SLIDER AVEC LES COURS
         }
         //Style pour le premier carroussel   
     &:nth-of-type(1){
-        background-color: chartreuse;
-    }
-    //Style pour le deuxième carroussel   
-    &:nth-of-type(2){
-        background-color: chocolate;
-    }
-    //Style pour le troisième carroussel   
-    &:nth-of-type(3){
-        background-color: cornflowerblue;
+        background-color: rgb(73, 35, 35);
     }
 
     }
