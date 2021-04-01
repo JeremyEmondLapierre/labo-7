@@ -1,5 +1,5 @@
-Labo-5
+Labo-6
 @Jérémy Emond-Lapierre
 Groupe 2
-Importation du site sur WordPress
-https://e1952173.webdev.cmaisonneuve.qc.ca/Design/
+Modification apportées suite au commentaire du TP1
+https://jeremyemondlapierre.github.io/labo-6/
