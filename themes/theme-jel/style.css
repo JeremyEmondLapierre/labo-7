@@ -702,6 +702,7 @@ textarea {
   padding-left: 0;
   background-color: #000;
   text-align: left;
+  z-index: 99999;
   /* Fin du sub-menu*/
 }
 
@@ -792,7 +793,6 @@ Menu pour tablette
   .main-navigation.toggled ul,
   .main-navigation ul {
     display: flex;
-    position: static;
     justify-content: space-around;
   }
   .main-navigation.toggled ul a[href="#"]::after,
@@ -801,14 +801,26 @@ Menu pour tablette
   }
   .main-navigation.toggled ul li:hover ul,
   .main-navigation ul li:hover ul {
-    display: block;
-    position: absolute;
-    width: 250px;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 18vw;
+    animation: anim-sous-menu .5s both;
   }
   .main-navigation.toggled ul ul,
   .main-navigation ul ul {
     display: none;
+  }
+}
+
+@keyframes anim-sous-menu {
+  from {
+    opacity: 0;
+    transform: translateX(0) translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
   }
 }
 
@@ -1195,7 +1207,6 @@ LISTE DES BLOCS DE COURS PAR type_de_cours FIN
 ------------------------------------------------------------------------- */
 .site-title {
   margin-bottom: 0px;
-  font-family: "Dancing Script", cursive;
   font-weight: bold;
   font-size: clamp(1.2rem, -0.875rem + 8.333vw, 2.5rem);
   width: 100vw;
@@ -1209,7 +1220,7 @@ LISTE DES BLOCS DE COURS PAR type_de_cours FIN
   background-clip: text;
   color: transparent;
   font-size: clamp(1.2rem, -0.875rem + 8.333vw, 2.5rem);
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
   animation: revelation 3000ms ease-in-out forwards 200ms, briller 2500ms linear infinite 2000ms;
   text-decoration: none;
 }
@@ -1221,7 +1232,7 @@ LISTE DES BLOCS DE COURS PAR type_de_cours FIN
 .site-description {
   font-size: clamp(0.9rem, -0.875rem + 8.333vw, 1.5rem);
   margin-top: 0px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Courrier';
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -1491,23 +1502,26 @@ La barre du millieu
 STYLES QUI SONT APPLIQUÉS AU SLIDER AVEC LES COURS
 *******************************************************************/
 .carrouselCours {
-  width: 600vw;
+  width: 300vw;
   height: 20vh;
   display: flex;
   transition: transform .5s;
   transform: translate(0);
   flex-wrap: nowrap !important;
+  display: flex !important;
+  justify-content: flex-start !important;
 }
 
 .carrouselCours .slide__conteneur {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 44vw !important;
+  margin-left: 58px !important;
 }
 
 .carrouselCours .slide__conteneur .slide {
-  width: 100%;
+  width: 50%;
   height: 10rem;
   display: flex;
   flex-direction: row;
@@ -1557,5 +1571,17 @@ STYLES QUI SONT APPLIQUÉS AU SLIDER AVEC LES COURS
 .ctrl-carroussel .rad-carrousel {
   display: block;
   margin: .5rem 2rem .5rem 2rem;
+}
+
+.ctrl-carroussel .rad-carrousel:nth-of-type(4) {
+  display: none;
+}
+
+.ctrl-carroussel .rad-carrousel:nth-of-type(5) {
+  display: none;
+}
+
+.ctrl-carroussel .rad-carrousel:nth-of-type(6) {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,6 +9,7 @@
 		padding-left: 0;
 		background-color: #000;
 		text-align: left;
+		z-index: 99999;
 		//Liste de tous les cours dans chaque session
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -111,18 +112,22 @@ Menu pour tablette
 	.main-navigation.toggled ul,
 	.main-navigation ul {
 		display: flex;
-		position: static;
+		//position: static;
 		justify-content: space-around;
 		a[href="#"]::after{
 			display: none;
 		}
 		
 		li:hover ul{
-			display: block;
-			position: absolute;
-			width: 250px;
-			height: auto;
-			
+			// display: block;
+			// position: absolute;
+			// width: 250px;
+			// height: auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			width: 18vw;
+			animation: anim-sous-menu .5s both;
 		}
 	ul{
 		display: none;
@@ -130,6 +135,18 @@ Menu pour tablette
 	}
 	}
 }
+
+@keyframes anim-sous-menu{
+	from{
+		opacity: 0;
+		transform: translateX(0) translateY(100px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0) translateY(0);
+	}
+}
+
 
 .comment-navigation,
 .posts-navigation,

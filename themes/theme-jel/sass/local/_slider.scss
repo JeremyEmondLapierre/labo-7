@@ -2,19 +2,22 @@
 STYLES QUI SONT APPLIQUÉS AU SLIDER AVEC LES COURS
 *******************************************************************/
 .carrouselCours{
-    width: 600vw;
+    width: 300vw;
     height: 20vh;
     display: flex;
     transition: transform .5s;
     transform: translate(0);
     flex-wrap: nowrap !important;
+    display: flex !important;
+    justify-content: flex-start !important;
     .slide__conteneur{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100vw;
+        width: 44vw !important;
+        margin-left: 58px !important;
     .slide{
-        width: 100%;
+        width: 50%;
         height: 10rem;
         display: flex;
         flex-direction: row;
@@ -62,5 +65,15 @@ STYLES QUI SONT APPLIQUÉS AU SLIDER AVEC LES COURS
     .rad-carrousel{
         display: block;
         margin: .5rem 2rem .5rem 2rem;
+        &:nth-of-type(4){
+            display: none;
+        }
+        &:nth-of-type(5){
+            display: none;
+        }
+        &:nth-of-type(6){
+            display: none;
+        }
     }
+    
 }
