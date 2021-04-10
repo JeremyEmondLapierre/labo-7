@@ -1144,6 +1144,7 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .home .cours section article {
@@ -1183,6 +1184,7 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
 
 @media (min-width: 1200px) {
   .home .cours section article {
+    width: 29%;
     margin: 1%;
   }
 }
@@ -1574,15 +1576,15 @@ STYLES QUI SONT APPLIQUÉS AU SLIDER AVEC LES COURS
   margin: .5rem 2rem .5rem 2rem;
 }
 
-.ctrl-carroussel .rad-carrousel:nth-of-type(4) {
-  display: none;
-}
-
-.ctrl-carroussel .rad-carrousel:nth-of-type(5) {
-  display: none;
-}
-
-.ctrl-carroussel .rad-carrousel:nth-of-type(6) {
-  display: none;
+@media (min-width: 1200px) {
+  .ctrl-carroussel .rad-carrousel:nth-of-type(4) {
+    display: none;
+  }
+  .ctrl-carroussel .rad-carrousel:nth-of-type(5) {
+    display: none;
+  }
+  .ctrl-carroussel .rad-carrousel:nth-of-type(6) {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

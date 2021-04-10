@@ -56,7 +56,7 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        // justify-content: center;
+        justify-content: center;
 
     //Style qui s'applique aux articles de cours
     article{
@@ -94,7 +94,9 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
     //Pour le média tablette... mettre 3 articles de largeur
     @include desktop{
         article{
+            width: 29%;
             margin: 1%;
+            
         }
         
     }

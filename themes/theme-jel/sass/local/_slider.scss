@@ -68,15 +68,18 @@ STYLES QUI SONT APPLIQUÉS AU SLIDER AVEC LES COURS
     .rad-carrousel{
         display: block;
         margin: .5rem 2rem .5rem 2rem;
-        &:nth-of-type(4){
-            display: none;
+        @include desktop{
+            &:nth-of-type(4){
+                display: none;
+            }
+            &:nth-of-type(5){
+                display: none;
+            }
+            &:nth-of-type(6){
+                display: none;
+            }
         }
-        &:nth-of-type(5){
-            display: none;
-        }
-        &:nth-of-type(6){
-            display: none;
-        }
+        
     }
     
 }
