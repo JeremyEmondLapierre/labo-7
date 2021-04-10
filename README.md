@@ -1,9 +1,8 @@
-Labo-6
+Labo-7
 =============
 @Jérémy Emond-Lapierre
 Groupe 2
-Modification apportées suite au commentaire du TP1
-*GithubPages*
-https://jeremyemondlapierre.github.io/labo-6/
+Ajout de plusieurs carrousels présentant les cours
+
 *Webdev*
 https://e1952173.webdev.cmaisonneuve.qc.ca/Design/
