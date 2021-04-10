@@ -1144,11 +1144,9 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .home .cours section article {
-  margin: 1%;
   width: 100%;
 }
 
@@ -1159,6 +1157,7 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin: 10px 30px 10px 20px;
 }
 
 .home .cours section article:hover:not(.slide__conteneur) {
@@ -1182,16 +1181,8 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
   padding-right: 10px;
 }
 
-@media (min-width: 800px) {
-  .home .cours section article {
-    width: 45%;
-    margin: 1%;
-  }
-}
-
 @media (min-width: 1200px) {
   .home .cours section article {
-    width: 29%;
     margin: 1%;
   }
 }
@@ -1504,12 +1495,17 @@ STYLES QUI SONT APPLIQUÉS AU SLIDER AVEC LES COURS
 .carrouselCours {
   width: 300vw;
   height: 20vh;
-  display: flex;
+  display: flex !important;
   transition: transform .5s;
   transform: translate(0);
   flex-wrap: nowrap !important;
-  display: flex !important;
   justify-content: flex-start !important;
+}
+
+@media (max-width: 1200px) {
+  .carrouselCours {
+    width: 600vw;
+  }
 }
 
 .carrouselCours .slide__conteneur {
@@ -1517,11 +1513,16 @@ STYLES QUI SONT APPLIQUÉS AU SLIDER AVEC LES COURS
   justify-content: center;
   align-items: center;
   width: 44vw !important;
-  margin-left: 58px !important;
+}
+
+@media (max-width: 1200px) {
+  .carrouselCours .slide__conteneur {
+    width: 100vw !important;
+  }
 }
 
 .carrouselCours .slide__conteneur .slide {
-  width: 50%;
+  width: 40vw;
   height: 10rem;
   display: flex;
   flex-direction: row;
@@ -1530,9 +1531,9 @@ STYLES QUI SONT APPLIQUÉS AU SLIDER AVEC LES COURS
   border: 2px solid black;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 1200px) {
   .carrouselCours .slide__conteneur .slide {
-    width: 60%;
+    width: 80vw;
   }
 }
 

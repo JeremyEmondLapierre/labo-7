@@ -32,3 +32,9 @@ $desktop_accueil : 800px;
 		@content;
 	}
 }
+
+@mixin medium{
+	@media (max-width : 1200px){
+		@content;
+	}
+}

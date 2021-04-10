@@ -4,31 +4,34 @@ STYLES QUI SONT APPLIQUÉS AU SLIDER AVEC LES COURS
 .carrouselCours{
     width: 300vw;
     height: 20vh;
-    display: flex;
+    display: flex !important;
     transition: transform .5s;
     transform: translate(0);
     flex-wrap: nowrap !important;
-    display: flex !important;
     justify-content: flex-start !important;
+    @include medium{
+        width: 600vw;
+        }
+    
     .slide__conteneur{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 44vw !important;
-        margin-left: 58px !important;
+        @include medium{
+            width: 100vw !important;
+        }
     .slide{
-        width: 50%;
+        width: 40vw;
         height: 10rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         border: 2px solid black;
-        @include tablette{
-            width: 60%;
+        @include medium{
+            width: 80vw;
         }
-
-
         img{
             display: block;
             margin: 2%;

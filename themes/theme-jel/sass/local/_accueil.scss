@@ -56,12 +56,10 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        // justify-content: center;
 
     //Style qui s'applique aux articles de cours
     article{
-        
-        margin: 1%;
         width: 100%;
 
         &:not(.slide__conteneur){
@@ -71,6 +69,7 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            margin: 10px 30px 10px 20px;
         }
         &:hover:not(.slide__conteneur){
             transform: scale(1.02);
@@ -92,17 +91,9 @@ LISTE DES BLOCS DE COURS PAR type_de_cours
             padding-right: 10px;
         }
     }
-    //Pour le média tablette... mettre seulement 2 articles de largeur
-    @include tablette{
-        article{
-            width: 45%;
-            margin: 1%;
-        }
-    }
     //Pour le média tablette... mettre 3 articles de largeur
     @include desktop{
         article{
-            width: 29%;
             margin: 1%;
         }
         
