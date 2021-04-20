@@ -5,4 +5,4 @@ Groupe 2
 Ajout de plusieurs carrousels présentant les cours
 
 *Webdev*
-https://e1952173.webdev.cmaisonneuve.qc.ca/Design/
+https://e1952173.webdev.cmaisonneuve.qc.ca/InterfaceWeb/
